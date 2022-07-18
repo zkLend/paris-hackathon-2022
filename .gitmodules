@@ -1,0 +1,3 @@
+[submodule "account/dependencies/cairo-contracts"]
+	path = account/dependencies/cairo-contracts
+	url = https://github.com/OpenZeppelin/cairo-contracts
