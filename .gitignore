@@ -1,4 +1,8 @@
+.pytest_cache/
+__pycache__/
+
 /account/build/
+
 node_modules
 /onboarder/solidity-contracts/artifacts
 /cache
