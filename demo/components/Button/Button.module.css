@@ -1,0 +1,31 @@
+.button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #5286D8;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button.disabled {
+  opacity: 0.3;
+  cursor: unset;
+}
+
+@media (max-width: 500px) {
+  .button {
+    width: 70%;
+    font-size: 16px;
+    padding: 0.5rem 0;
+  }
+}

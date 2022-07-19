@@ -1,0 +1,62 @@
+.container {
+  height: 60px;
+  width: 200px;
+  padding-left: 2rem;
+  background: no-repeat url("../../public/accBg.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  user-select: none;
+}
+
+.container.walletStatus {
+  cursor: pointer;
+}
+
+.walletStatus:hover {
+  color: #49c4c1;
+}
+
+.textWrapper {
+  width: 60%;
+}
+
+.account {
+  padding: 0.5rem 0;
+  padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.connected {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    background: no-repeat url("../../public/accMobileBg.svg");
+    background-size: contain;
+    font-size: 14px;
+    padding-left: 0;
+  }
+
+  .container.walletStatus {
+    padding-bottom: 0.5rem;
+  }
+
+  .account {
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+}

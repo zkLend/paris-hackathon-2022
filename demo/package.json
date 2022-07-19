@@ -1,0 +1,32 @@
+{
+  "name": "chaotic-claim",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3008 next dev",
+    "build": "next build",
+    "start": "PORT=5000 next start",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "@typechain/ethers-v5": "^8.0.2",
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.34",
+    "@types/ua-parser-js": "^0.7.36",
+    "axios": "^0.27.2",
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "ethers": "^5.5.1",
+    "husky": "^7.0.0",
+    "next": "12.0.3",
+    "prettier": "^2.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "starknet": "^3.17.0",
+    "typechain": "^6.0.2",
+    "typescript": "4.4.4",
+    "ua-parser-js": "^1.0.2"
+  }
+}

@@ -1,0 +1,14 @@
+.pagination {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.pageButton {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: #5286d8;
+  cursor:pointer;
+}

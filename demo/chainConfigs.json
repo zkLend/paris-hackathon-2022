@@ -1,0 +1,24 @@
+[
+  {
+    "name": "moonriver",
+    "chainId": 1285,
+    "explorer": "https://moonriver.moonscan.io/",
+    "rpc": {
+      "http": "https://rpc.api.moonriver.moonbeam.network/"
+    },
+    "addresses": {
+      "AirdropDistributor": "0x4B42380F7199fe1b5Ac80144B46ad2d533a75f29"
+    }
+  },
+  {
+    "name": "moonriver",
+    "chainId": 11285,
+    "explorer": "https://movr-explorer.dev.chaotic.finance/",
+    "rpc": {
+      "http": "https://movr-rpc-http.dev.chaotic.finance/"
+    },
+    "addresses": {
+      "AirdropDistributor": "0x07b2A314DD998ADcb19Ff7E25Fe736234916eC2B"
+    }
+  }
+]
