@@ -1,8 +1,6 @@
 import styles from "./Subpage.module.css";
 import { useAccount } from "../../hooks/useAccount";
 import Modal from "../../components/modal/Modal";
-import { useState } from "react";
-import { L2AccountStatus, useL2Account } from "../../hooks/useLayerTwoWallet";
 import { stark } from "starknet";
 
 enum ModalType {
@@ -12,8 +10,6 @@ enum ModalType {
 
 export default function Claim() {
   const { account } = useAccount();
-  const { l2AccountStatus } = useL2Account();
-  const [activeModal, setActiveModal] = useState<ModalType>(ModalType.Create);
 
   const callArray = [
     {
@@ -113,45 +109,13 @@ export default function Claim() {
 
   return (
     <div className={styles.subpageWrapper}>
-      {activeModal === ModalType.Create && (
-        <Modal
-          contentText={
-            l2AccountStatus === L2AccountStatus.Loading
-              ? "Loading L2 account status on starkNet"
-              : l2AccountStatus === L2AccountStatus.Ready
-              ? "Successfully created an account on layer 2"
-              : "Create an account on starkNet"
-          }
-          isLoading={l2AccountStatus === L2AccountStatus.Loading}
-          buttonText="Create"
-          disableButton={l2AccountStatus !== L2AccountStatus.NotCreated}
-          onButtonClick={onButtonClick}
-        />
-      )}
-      {activeModal === ModalType.Claim && (
-        <Modal
-          contentText="Claim a token from starkNet"
-          isLoading={false}
-          buttonText="Claim"
-          disableButton={false}
-          onButtonClick={onButtonClick}
-        />
-      )}
-
-      <div className={styles.pagination}>
-        <span
-          className={styles.pageButton}
-          onClick={() => {
-            setActiveModal(ModalType.Create);
-          }}
-        ></span>
-        <span
-          className={styles.pageButton}
-          onClick={() => {
-            setActiveModal(ModalType.Claim);
-          }}
-        ></span>
-      </div>
+      <Modal
+        contentText="Claim a token from starkNet"
+        isLoading={false}
+        buttonText="Claim"
+        disableButton={false}
+        onButtonClick={onButtonClick}
+      />
     </div>
   );
 }

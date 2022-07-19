@@ -6,3 +6,6 @@ __pycache__/
 node_modules
 /onboarder/solidity-contracts/artifacts
 /cache
+
+/demo/.next
+/demo/out
