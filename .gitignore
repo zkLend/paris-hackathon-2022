@@ -1,1 +1,4 @@
 /account/build/
+node_modules
+/onboarder/solidity-contracts/artifacts
+/cache
