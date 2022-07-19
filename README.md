@@ -2,6 +2,14 @@
 
 zkLend is submitting an EIP-712-enabled account contract implementation.
 
+# Deployment
+
+Layer-1 private key (to be used in Metamask): `0xd5f6ec36a6019f8786f1ef3461465480391b92bf087a7dae4449e05984bf9127`
+
+Layer-1 address: `0x250511E01680978F6780c84A76B605CDc82deFAe`
+
+Layer-2 deployed account (in `alpha-goerli`): `0x37d866de30e5a552a9b6caf0b90a1692a0c235af746fe8ec1f3236b1b2108b`
+
 # The problem
 
 As of today, using StarkNet involves the following steps:
